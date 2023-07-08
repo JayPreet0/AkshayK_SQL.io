@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Manipulation Language</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+				<div id="intro">
+					<h1>Akshay Khaire</h1>
+					<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+					<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="akshay-khaire" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/akshay-khaire?trk=profile-badge"></a></div>
+					<ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>	
+				</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">DML</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Data Definition Language</a></li>
+							<li><a href="DML.html">Data Manipulation Language</a></li>
+							<li class="active"><a href="DQL.html">Data Query Language</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/akshay-khaire" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+							<li><a href="mailto:khairejaypreet@gmail.com" class="icon solid fa-envelope"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/JayPreet0" class="icon brands fa-github"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								</header>
+								<!-- Preformatted Code -->
+									<h2>Performing Arithmatic Operations</h2>
+									<pre><code>
+To perform arithmetic operations in SQL, use the following syntax:
+SELECT <b>Value1 (ArithmeticOperator) Value2</b>;
+
+
+Example:
+Let's consider the multiplication operation:
+
+SELECT 2 * 3;
+
+This operation will give an output of 6.
+Now, let's take another example where we utilize the pow function in SQL to calculate the power of a number.
+
+SELECT pow(a, b);
+
+In this function, "a" represents the base number, and "b" represents the exponent.
+
+
+Example:
+
+SELECT pow(2, 3);
+
+This operation will give an output of 8.
+</code></pre>
+									<h2>Performing  Comparison Operations</h2>
+									<pre><code>
+To perform comparison operations in SQL, use the following syntax:
+
+SELECT <b>Value1 (Comparison Operator) Value2</b>;
+
+Please note that the output of these operations will always be in binary format,i.e., 0 and 1.
+Where, "0" stands for False and "1" stands for True.
+
+
+Example:
+
+SELECT 2 > 3;
+
+This operation will output 0, i.e., False.
+</code></pre>
+									<h2>Fetching record from a table</h2>
+									<pre><code>
+SELECT <b>Column Name</b>
+FROM <b>Table Name</b>;
+<br>
+Example:
+If there is a table who's syntax is 
+<br>
+Create Table Student (
+			ID int, 
+			Name varchar (50),
+			Address varchar (100),
+			City (15)
+					 );
+					 
+and now, if we have to fetch all the names from the table, 
+Our syntax will be:
+<br>
+SELECT Name
+FROM Student;		
+<br>
+</code></pre>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								 Pune, Maharashtra, India
+							</li><br>
+							<li class="icon solid fa-phone"> (+91) 8796667475</li><br>
+							<li class="icon solid fa-envelope"><a href="mailto:khairejaypreet@gmail.com"> Drop a Mail</a></li><br>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/akshay-khaire"> Follow me on LinkedIN.</a></li><br>
+							<li class="icon brands fa-github"><a href="https://github.com/JayPreet0"> Do check my GitHub.</a></li><br>
+						</ul>
+					</section>
+				</footer>
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Manipulation Language</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+				<div id="intro">
+					<h1>Akshay Khaire</h1>
+					<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+					<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="akshay-khaire" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/akshay-khaire?trk=profile-badge"></a></div>
+					<ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>	
+				</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">DML</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Data Definition Language</a></li>
+							<li class="active"><a href="DML.html">Data Manipulation Language</a></li>
+							<li><a href="DQL.html">Data Query Language</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/akshay-khaire" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+							<li><a href="mailto:khairejaypreet@gmail.com" class="icon solid fa-envelope"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/JayPreet0" class="icon brands fa-github"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								</header>
+								<!-- Preformatted Code -->
+									<h2>Inserting record in a table</h2>
+									<pre><code>
+Insert into <b>Table_Name</b>
+            Values (<b>Value 1, Value 2, Value 3,......Value n</b>);
+<br>
+Example:
+If there is a table who's syntax is 
+<br>
+Create Table Student (
+                                         ID int, 
+                                         Name varchar (50),
+                                         Address varchar (100),
+                                         City (15)
+                                         );
+and now, if we have to insert a record in the table, 
+Our syntax will be:
+<br>
+Insert into Student
+			Values(97, "Akshay", "LinkedIN", "Pune")
+<br>
+We always have to remember, 
+Maintaining the order type and input data type of values 
+is utmost important.			
+</code></pre>
+									<h2>Updating a record in a table</h2>
+									<pre><code>
+Update <b>Table_Name</b>
+            Set (
+	 <b>Column 1 = Value 1,
+		 Column 2 = Value 2,
+		 .
+		 .
+		 .
+		 Column n = Value n
+				)</b>
+	    where <b>condition/s</b>;
+<br>
+Example:
+Update Student
+		   Set (ID = 1)
+		   where Name = "Akshay";
+<br>
+</code></pre>
+<h2>Deleting a record in a table</h2>
+<pre><code>
+Delete from <b>Table_Name</b>
+where <b>condition/s</b>;
+<br>
+Example:
+Delete from Student
+where Name = "Akshay" and ID=1;
+<br>
+</code></pre>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								 Pune, Maharashtra, India
+							</li><br>
+							<li class="icon solid fa-phone"> (+91) 8796667475</li><br>
+							<li class="icon solid fa-envelope"><a href="mailto:khairejaypreet@gmail.com"> Drop a Mail</a></li><br>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/akshay-khaire"> Follow me on LinkedIN.</a></li><br>
+							<li class="icon brands fa-github"><a href="https://github.com/JayPreet0"> Do check my GitHub.</a></li><br>
+						</ul>
+					</section>
+				</footer>
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
